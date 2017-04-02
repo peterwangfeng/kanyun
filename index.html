@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>看云</title>
+    <link rel="shortcut icon" href="http://www.kancloud.cn/favicon.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", serif;
+        }
+
+        .navbar a {
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        .pull-right a:nth-child(1) {
+            background-color: #4d5658;
+            color: #fff;
+        }
+
+        .pull-right a:nth-child(2) {
+            background-color: #fff;
+            color: green;
+        }
+
+        h1 {
+            opacity: 0;
+        }
+
+        .section * {
+            opacity: 0;
+        }
+
+        .s1 {
+            background: url("images/1.png");
+            color: #fff;
+            opacity: 1;
+            text-align: center;
+        }
+
+        .s1 h1 {
+            font-size: 30px;
+        }
+
+        .s1 img {
+            margin-bottom: 20px;
+        }
+
+        .s1 button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .s1 button#exp {
+            width: 146px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .s1 button#ran {
+            width: 146px;
+        }
+
+        .s2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .second {
+            color: #fff;
+            margin-top: 100px;
+            text-align: left;
+        }
+
+        .second p {
+            font-size: 20px;
+        }
+
+        .img {
+            text-align: center;
+        }
+
+        .s9 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .s9 h2 {
+            margin-top: 30px;
+        }
+
+        .s9 a {
+            margin-top: 30px;
+            background-color: transparent;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="pull-left">
+            <a href="" class="navbar-brand ">广场</a>
+            <a href="" class="navbar-brand ">价格</a>
+            <a href="" class="navbar-brand ">帮助</a>
+            <a href="" class="navbar-brand ">博客</a>
+        </div>
+        <div class="pull-right navbar-brand">
+            <a href="" class="btn btn-default">登录</a>
+            <a href="" class="btn btn-success">注册</a>
+        </div>
+    </div>
+</nav>
+<div id="fullpage">
+    <div class="section s1">
+        <div class="logo img"><img src="images/logo.png"></div>
+        <h1 class="animated bounce">专注于文档在线创作、协作、分享和托管</h1>
+        <button id="ran" class="btn btn-primary btn-lg">随便看看</button>
+        <button id="exp" class="btn btn-default btn-lg">立即体验</button>
+    </div>
+    <div class="section s2">
+        <div class="container">
+            <div class="col-sm-6 second">
+                <h1>最佳文档体验</h1>
+                <p>看云致力于打造技术文档和产品手册写作及阅读的最佳体验，让你轻松的完成文档写作，并愉悦的阅读，无论你使用电脑、平板还是手机，还可以在广场中学习大量技术文档和专题。</p>
+            </div>
+            <div class="col-sm-6 img">
+                <img src="images/11.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section s3">
+        <div class="container">
+            <div class="col-sm-6 img">
+                <img src="images/13.png" alt="">
+            </div>
+            <div class="col-sm-6 second">
+                <h1>版本库管理</h1>
+                <p>基于Git版本库管理文档历史记录，让你的文档修订有迹可循，随时查看或还原到任何一个历史版本，同时可以完成离线编辑和远程推送，或者同步推送到其它的Git服务器</p>
+            </div>
+        </div>
+    </div>
+    <div class="section s4">
+        <div class="container">
+            <div class="col-sm-6 second">
+                <h1>完美MarkDown写作</h1>
+                <p>看云在MarkDown标准规范的基础上，做了一些体验上的改进，增加了一些个性化标签、TOC目录导航和TeX公式支持，支持编辑实时预览，新手简单上手，给你非一般的写作感受。</p>
+            </div>
+            <div class="col-sm-6 img">
+                <img src="images/14.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section s5">
+        <div class="container">
+            <div class="col-sm-6 img">
+                <img src="images/15.png" alt="">
+            </div>
+            <div class="col-sm-6 second">
+                <h1>文档团队协作</h1>
+                <p>多人及团队通过在线和离线方式进行文档协作编辑、审核，支持授权文档和团队成员不同的操作权限，包括管理、编辑和阅读权限。</p>
+            </div>
+        </div>
+    </div>
+    <div class="section s6">
+        <div class="container">
+            <div class="col-sm-6 second">
+                <h1>完美MarkDown写作</h1>
+                <p>看云在MarkDown标准规范的基础上，做了一些体验上的改进，增加了一些个性化标签、TOC目录导航和TeX公式支持，支持编辑实时预览，新手简单上手，给你非一般的写作感受。</p>
+            </div>
+            <div class="col-sm-6 img">
+                <img src="images/16.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section s7">
+        <div class="container">
+            <div class="col-sm-6 img">
+                <img src="images/17.png" alt="">
+            </div>
+            <div class="col-sm-6 second">
+                <h1>个性化你的文档</h1>
+                <p>多人及团队通过在线和离线方式进行文档协作编辑、审核，支持授权文档和团队成员不同的操作权限，包括管理、编辑和阅读权限。</p>
+            </div>
+        </div>
+    </div>
+    <div class="section s8">
+        <div class="container">
+            <div class="col-sm-6 second">
+                <h1>开放和自由的使用</h1>
+                <p>文档功能对个人均免费自由使用，托管在看云的文档可以随时同步/迁移你的文档版本库数据，我们还提供CHM/EPUB导入以及EPUB/PDF/WORD/MOBI导出，以及提供开放的API。</p>
+            </div>
+            <div class="col-sm-6 img">
+                <img src="images/12.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section s9">
+        <div class="container">
+            <h1>超过20,000人使用看云进行文档写作</h1>
+            <h3>从现在开始，把文档托管到云端！</h3>
+            <a href="" class="btn btn-default btn-lg">立即体验</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $('#fullpage').fullpage({
+        navigation: true,
+        navigationColor: 'white',
+        continuousVertical: true,
+        sectionsColor: ['#1bbc9b', '#49ae3d', '#56bc8a', '#2c606a', '#f2992e', '#7cbd9d', '#a77dc2', '#85ce92', '#5cb85c'],
+        afterLoad: function (err, index) {
+            if (index === 1) {
+                $('.s1 *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s1 h1').addClass('animated bounce');
+                    $('.s1 img').addClass('animated rubberBand');
+                    $('.s1 #ran').addClass('animated bounceInDown');
+                    $('.s1 #exp').addClass('animated bounceInUp');
+                });
+            }
+            if (index === 2) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s2 h1').addClass('animated bounceInLeft');
+                    $('.s2 p').addClass('animated bounceInRight');
+                    setTimeout(function () {
+                        $('.s2 img').addClass('animated rotateIn')
+                    }, 500);
+                });
+            }
+            if (index === 3) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s3 h1').addClass('animated bounceInUp');
+                    $('.s3 p').addClass('animated bounceInDown');
+                    setTimeout(function () {
+                        $('.s3 img').addClass('animated bounceInLeft')
+                    }, 500);
+                });
+            }
+            if (index === 4) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s4 h1').addClass('animated flash');
+                    $('.s4 p').addClass('animated lightSpeedIn');
+                    setTimeout(function () {
+                        $('.s4 img').addClass('animated fadeInUpBig')
+                    }, 100);
+                });
+            }
+            if (index === 5) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s5 h1').addClass('animated rotateInDownLeft');
+                    $('.s5 p').addClass('animated rotateInUpRight');
+                    setTimeout(function () {
+                        $('.s5 img').addClass('animated lightSpeedIn')
+                    }, 100);
+                });
+            }
+            if (index === 6) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s6 h1').addClass('animated zoomInLeft');
+                    $('.s6 p').addClass('animated zoomInRight');
+                    setTimeout(function () {
+                        $('.s6 img').addClass('animated fadeInUpBig')
+                    }, 100);
+                });
+            }
+            if (index === 7) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s7 h1').addClass('animated zoomInDown');
+                    $('.s7 p').addClass('animated zoomInUp');
+                    setTimeout(function () {
+                        $('.s7 img').addClass('animated shake')
+                    }, 100);
+                });
+            }
+            if (index === 8) {
+                $('.section *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s8 h1').addClass('animated fadeInDownBig');
+                    $('.s8 p').addClass('animated fadeInUpBig');
+                    setTimeout(function () {
+                        $('.s8 img').addClass('animated zoomInUp')
+                    }, 100);
+                });
+            }
+            if (index === 9) {
+                $('.s9 *').animate({
+                    opacity: 1
+                }, 'fast', function () {
+                    $('.s9 h1').addClass('animated bounceInRight');
+                    $('.s9 h3').addClass('animated bounceInLeft');
+                    $('.s9 a').addClass('animated lightSpeedIn');
+                })
+            }
+        },
+        onLeave: function (index) {
+            if (index === 1) {
+                $('.s1 h1').animate({
+                    opacity: 0
+                }, function () {
+                    $('.s1 h1').removeClass('animated bounce');
+                    $('.s1 img').removeClass('animated rubberBand');
+                    $('.s1 #ran').removeClass('animated bounceInDown');
+                    $('.s1 #exp').removeClass('animated bounceInUp')
+                })
+            }
+            if (index === 2) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 1000, function () {
+                    $('.s2 h1').removeClass('animated bounceInLeft');
+                    setTimeout(function () {
+                        $('.s2 p').removeClass('animated bounceInRight');
+                    }, 1000);
+                    setTimeout(function () {
+                        $('.s2 img').removeClass('animated rotateIn')
+                    }, 1000);
+                });
+            }
+            if (index === 3) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s3 h1').removeClass('animated bounceInUp');
+                    $('.s3 p').removeClass('animated bounceInDown');
+                    $('.s3 img').removeClass('animated bounceInLeft')
+                });
+            }
+            if (index === 4) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s4 h1').removeClass('animated flash');
+                    setTimeout(function () {
+                        $('.s4 p').removeClass('animated lightSpeedIn');
+                    }, 1000);
+                    setTimeout(function () {
+                        $('.s4 img').removeClass('animated fadeInUpBig')
+                    }, 1000);
+                });
+            }
+            if (index === 5) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s5 h1').removeClass('animated rotateInDownLeft');
+                    $('.s5 p').removeClass('animated rotateInUpRight');
+                    $('.s5 img').removeClass('animated lightSpeedIn')
+                });
+            }
+            if (index === 6) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s6 h1').removeClass('animated zoomInLeft');
+                    $('.s6 p').removeClass('animated zoomInRight');
+                    setTimeout(function () {
+                        $('.s6 img').removeClass('animated fadeInUpBig')
+                    }, 100);
+                });
+            }
+            if (index === 7) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s7 h1').removeClass('animated zoomInDown');
+                    $('.s7 p').removeClass('animated zoomInUp');
+                    $('.s7 img').removeClass('animated shake')
+                });
+            }
+            if (index === 8) {
+                $('.section *').animate({
+                    opacity: 0
+                }, 'fast', function () {
+                    $('.s8 h1').removeClass('animated fadeInDownBig');
+                    $('.s8 p').removeClass('animated fadeInUpBig');
+                    $('.s8 img').removeClass('animated zoomInUp')
+                });
+            }
+            if (index === 9) {
+                $('.s9 h1').animate({
+                    opacity: 0
+                }, 500, function () {
+                    $('.s9 h1').removeClass('animated bounceInRight');
+                    $('.s9 h3').removeClass('animated bounceInLeft');
+                    $('.s9 a').removeClass('animated lightSpeedIn');
+                })
+            }
+        }
+    });
+    $('.s1 img').hover(function () {
+        $(this).addClass('animated hinge');
+    }, function () {
+        $(this).removeClass('animated hinge');
+    });
+    $('#ran').hover(function () {
+        $(this).addClass('animated bounceInLeft')
+    }, function () {
+        $(this).removeClass('animated bounceInLeft');
+    });
+
+    $('#exp').hover(function () {
+        $(this).addClass('animated bounceInRight')
+    }, function () {
+        $(this).removeClass('animated bounceInRight');
+    });
+    $('img').hover(function () {
+        $(this).addClass('animated hinge');
+    }, function () {
+        if (!$(this).is(':animated'))
+            $(this).removeClass('animated hinge');
+    })
+</script>
+</html>
